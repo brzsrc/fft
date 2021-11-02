@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for ruu in 16 32
+do
+    for lsq in 8  16 32
+    do
+	echo -n "ruu: $ruu lsq: $lsq "
+      export SSFLAGS="-ruu:size $ruu -lsq:size $lsq"
+      ./run-wattch 2>&1 | ./tabulate
+    done
+done

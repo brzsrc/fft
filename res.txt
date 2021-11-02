@@ -1,0 +1,40 @@
+./scripts/varyarch
+2  ,sim_IPC, 0.4505 ,sim_exec_BW, 0.4558 ,ruu_full, 0.9736 ,lsq_full, 0.0000 ,avg_sim_slip, 7.9873 ,dl1.miss_rate, 0.0009 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1413757117.7801
+4  ,sim_IPC, 0.7022 ,sim_exec_BW, 0.7253 ,ruu_full, 0.9535 ,lsq_full, 0.0000 ,avg_sim_slip, 9.4784 ,dl1.miss_rate, 0.0010 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1185503310.8459
+8  ,sim_IPC, 0.9465 ,sim_exec_BW, 0.9707 ,ruu_full, 0.9248 ,lsq_full, 0.0000 ,avg_sim_slip, 13.4986 ,dl1.miss_rate, 0.0011 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1058300483.1583
+16  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988717612.9235
+32  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0001 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9887 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1099353781.6264
+64  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9894 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1233984440.1482
+128  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9895 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1454438131.3508
+256  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9895 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1884030051.9852
+
+
+
+./scripts/varyarch-energy
+2  ,sim_IPC, 0.4505 ,sim_exec_BW, 0.4558 ,ruu_full, 0.9736 ,lsq_full, 0.0000 ,avg_sim_slip, 7.9873 ,dl1.miss_rate, 0.0009 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1413757117.7801
+4  ,sim_IPC, 0.7022 ,sim_exec_BW, 0.7253 ,ruu_full, 0.9535 ,lsq_full, 0.0000 ,avg_sim_slip, 9.4784 ,dl1.miss_rate, 0.0010 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1185503310.8459
+8  ,sim_IPC, 0.9465 ,sim_exec_BW, 0.9707 ,ruu_full, 0.9248 ,lsq_full, 0.0000 ,avg_sim_slip, 13.4986 ,dl1.miss_rate, 0.0011 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1058300483.1583
+16  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988717612.9235
+32  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0001 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9887 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1099353781.6264
+64  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9894 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1233984440.1482
+128  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9895 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1454438131.3508
+256  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9895 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1884030051.9852
+
+
+./scripts/varyarch-energy-2params
+ruu, 16 lsq, 8 ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988717612.8484
+ruu, 16 lsq, 16 ,sim_IPC, 1.1261 ,sim_exec_BW, 1.1765 ,ruu_full, 0.8850 ,lsq_full, 0.0000 ,avg_sim_slip, 21.6913 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  948333195.7627
+ruu, 16 lsq, 32 ,sim_IPC, 1.1261 ,sim_exec_BW, 1.1765 ,ruu_full, 0.8850 ,lsq_full, 0.0000 ,avg_sim_slip, 21.6913 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  957534072.2886
+ruu, 16 lsq, 64 ,sim_IPC, 1.1261 ,sim_exec_BW, 1.1765 ,ruu_full, 0.8850 ,lsq_full, 0.0000 ,avg_sim_slip, 21.6913 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  976007313.8047
+ruu, 32 lsq, 8 ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0001 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9887 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1099353781.5638
+ruu, 32 lsq, 16 ,sim_IPC, 1.3740 ,sim_exec_BW, 1.5548 ,ruu_full, 0.1611 ,lsq_full, 0.5129 ,avg_sim_slip, 29.3648 ,dl1.miss_rate, 0.0014 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988067159.4238
+ruu, 32 lsq, 32 ,sim_IPC, 1.4181 ,sim_exec_BW, 1.5757 ,ruu_full, 0.6809 ,lsq_full, 0.0000 ,avg_sim_slip, 30.8137 ,dl1.miss_rate, 0.0014 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  975629676.6527
+ruu, 32 lsq, 64 ,sim_IPC, 1.4181 ,sim_exec_BW, 1.5757 ,ruu_full, 0.6809 ,lsq_full, 0.0000 ,avg_sim_slip, 30.8137 ,dl1.miss_rate, 0.0014 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  992235815.4037
+ruu, 64 lsq, 8 ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9894 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1233984440.0981
+ruu, 64 lsq, 16 ,sim_IPC, 1.3824 ,sim_exec_BW, 1.5659 ,ruu_full, 0.0000 ,lsq_full, 0.6175 ,avg_sim_slip, 29.8151 ,dl1.miss_rate, 0.0014 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1090784847.1931
+ruu, 64 lsq, 32 ,sim_IPC, 1.7749 ,sim_exec_BW, 2.0816 ,ruu_full, 0.0850 ,lsq_full, 0.3554 ,avg_sim_slip, 44.0060 ,dl1.miss_rate, 0.0018 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  984847597.4160
+ruu, 64 lsq, 64 ,sim_IPC, 1.7606 ,sim_exec_BW, 2.0854 ,ruu_full, 0.4595 ,lsq_full, 0.0000 ,avg_sim_slip, 47.0922 ,dl1.miss_rate, 0.0018 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1006988462.7107
+ruu, 128 lsq, 8 ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1580 ,ruu_full, 0.0000 ,lsq_full, 0.8044 ,avg_sim_slip, 20.9895 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1454438131.4379
+ruu, 128 lsq, 16 ,sim_IPC, 1.3824 ,sim_exec_BW, 1.5659 ,ruu_full, 0.0000 ,lsq_full, 0.6175 ,avg_sim_slip, 29.8160 ,dl1.miss_rate, 0.0014 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1269410747.3930
+ruu, 128 lsq, 32 ,sim_IPC, 1.7761 ,sim_exec_BW, 2.0847 ,ruu_full, 0.0000 ,lsq_full, 0.3989 ,avg_sim_slip, 44.5882 ,dl1.miss_rate, 0.0018 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1142122341.8693
+ruu, 128 lsq, 64 ,sim_IPC, 1.9467 ,sim_exec_BW, 2.3990 ,ruu_full, 0.0246 ,lsq_full, 0.2385 ,avg_sim_slip, 70.6845 ,dl1.miss_rate, 0.0019 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1147966547.8225

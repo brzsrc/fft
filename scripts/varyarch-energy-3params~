@@ -1,0 +1,14 @@
+#!/bin/bash
+
+for bpredictor in bimod comb 2lev comb perfect
+do 
+  for ruu in 16 32
+  do
+    for lsq in 8  16 32
+    do
+      echo -n "bpred: $bpredictor ruu: $ruu lsq: $lsq "
+      export SSFLAGS="-bpred $bpredictor -ruu:size $ruu -lsq:size $lsq"
+      ./run-wattch 2>&1 | ./tabulate
+    done
+  done
+done

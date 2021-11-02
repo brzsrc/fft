@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Usage: varycachelinesize 16 64
+# for powers of two from 16 to 64 inclusive
+# line sizes of 128 or larger crash the simulator.
+
+for ((x=$1; x <= $2 ; x *= 2))
+do
+  echo -n "D1_cache_linesize" $x " "
+  export SSFLAGS="-cache:dl1 dl1:1024:$x:1:l"
+  ./run-wattch \
+      2>&1 | ./tabulate
+done
