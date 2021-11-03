@@ -1,0 +1,44 @@
+#!/bin/bash
+
+# Usage: varycachelinesize 16 64
+# for powers of two from 16 to 64 inclusive
+# line sizes of 128 or larger crash the simulator.
+
+# for ((x=$1; x <= $2 ; x *= 2))
+# do
+#   echo -n "D1_cache_linesize" $x " "
+#   export SSFLAGS="-cache:dl1 dl1:1024:$x:1:l"
+#   ./run-wattch \
+#       2>&1 | ./tabulate
+# done
+
+
+# Usage: varycachesize 256 8192 
+# for powers of two from 256 to 8192 inclusive
+
+# for ((x=$1; x <= $2 ; x *= 2))
+# do
+#   echo -n "D1_cache_size" $x " dl1.miss_rate "
+#   export SSFLAGS="-cache:dl1 dl1:$x:32:1:l"
+#   ./run-wattch \
+#      2>&1 | grep dl1.miss_rate | awk '{print $2;}'
+# done
+
+
+
+for bpredictor in bimod comb 2lev comb perfect
+do 
+  for ruu in 16 32
+  do
+    for lsq in 8  16 32
+    do
+      for ((x=$1; x <= $2 ; x *= 2))
+      do
+        echo -n "bpred, $bpredictor ,ruu, $ruu ,lsq, $lsq ,D1_cache_size $x "
+        export SSFLAGS="-bpred $bpredictor -ruu:size $ruu -lsq:size $lsq -cache:dl1 dl1:$x:32:1:l"
+        ./run-wattch \
+          2>&1 | ./tabulate
+      done
+    done
+  done
+done
