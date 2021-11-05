@@ -5,7 +5,7 @@
 
 for ((x=$1; x <= $2 ; x *= 2))
 do
-  echo -n "D1_cache_size" $x " dl1.miss_rate "
+  echo -n "D1_cache_size" $x 
   export SSFLAGS="-cache:dl1 dl1:$x:32:1:l"
   ./run-wattch \
      2>&1 | ./tabulate

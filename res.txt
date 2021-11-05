@@ -1,6 +1,6 @@
-./scripts/varyarch
-4  ,sim_IPC, 0.7022 
+./scripts/varyarch-ruu
 2  ,sim_IPC, 0.4505 
+4  ,sim_IPC, 0.7022 
 8  ,sim_IPC, 0.9465 
 16  ,sim_IPC, 1.1133
 32  ,sim_IPC, 1.1128
@@ -101,6 +101,13 @@ D1_cache_size 1024  dl1.miss_rate 0.0004
 D1_cache_size 2048  dl1.miss_rate 0.0003
 D1_cache_size 4096  dl1.miss_rate 0.0001
 D1_cache_size 8192  dl1.miss_rate 0.0001
+
+D1_cache_size 256  ,sim_IPC, 1.1104 ,sim_exec_BW, 1.1495 ,ruu_full, 0.3937 ,lsq_full, 0.6388 ,avg_sim_slip, 20.3227 ,dl1.miss_rate, 0.0051 ,ul2.miss_rate, 0.0109 ,total_power_cycle_cc1,  950767506.2192
+D1_cache_size 512  ,sim_IPC, 1.1121 ,sim_exec_BW, 1.1514 ,ruu_full, 0.3932 ,lsq_full, 0.6394 ,avg_sim_slip, 20.2899 ,dl1.miss_rate, 0.0029 ,ul2.miss_rate, 0.0189 ,total_power_cycle_cc1,  981797353.0241
+D1_cache_size 1024 ,sim_IPC, 1.1148 ,sim_exec_BW, 1.1541 ,ruu_full, 0.3926 ,lsq_full, 0.6403 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0004 ,ul2.miss_rate, 0.1116 ,total_power_cycle_cc1, 1037281217.7646
+D1_cache_size 2048 ,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3926 ,lsq_full, 0.6403 ,avg_sim_slip, 20.2389 ,dl1.miss_rate, 0.0003 ,ul2.miss_rate, 0.1587 ,total_power_cycle_cc1, 1106543920.8040
+D1_cache_size 4096 ,sim_IPC, 1.1151 ,sim_exec_BW, 1.1544 ,ruu_full, 0.3926 ,lsq_full, 0.6404 ,avg_sim_slip, 20.2357 ,dl1.miss_rate, 0.0001 ,ul2.miss_rate, 0.2996 ,total_power_cycle_cc1, 1263364448.7760
+D1_cache_size 8192 ,sim_IPC, 1.1151 ,sim_exec_BW, 1.1544 ,ruu_full, 0.3926 ,lsq_full, 0.6404 ,avg_sim_slip, 20.2357 ,dl1.miss_rate, 0.0001 ,ul2.miss_rate, 0.2996 ,total_power_cycle_cc1, 1503394731.0813
 
 ./scripts/varycachelinesize-3para 16 64
 bpred, bimod ,ruu, 16 ,lsq, 8 ,D1_cache_size 16 ,sim_IPC, 1.0745 ,sim_exec_BW, 1.1117 ,ruu_full, 0.4093 ,lsq_full, 0.6243 ,avg_sim_slip, 21.0011 ,dl1.miss_rate, 0.0348 ,ul2.miss_rate, 0.0017 ,total_power_cycle_cc1,  919376099.1053
