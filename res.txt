@@ -217,4 +217,15 @@ bpred, perfect ,ruu, 32 ,lsq, 32 ,D1_cache_size 64 ,sim_IPC, 1.6295 ,sim_exec_BW
 # of floating point ALUs 6,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1079799188.1558
 # of floating point ALUs 7,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1125298194.0914
 # of floating point ALUs 8,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1170775884.7225
-# of floating point ALUs 9# of floating point ALUs 10⏎
+# of floating point ALUs 9# of floating point ALUs 10
+
+./scripts/varyfpmult 1 10
+# of floating point multipliers/ dividers 1,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988715429.2935
+# of floating point multipliers/ dividers 2,sim_IPC, 1.1142 ,sim_exec_BW, 1.1535 ,ruu_full, 0.3935 ,lsq_full, 0.6393 ,avg_sim_slip, 20.2539 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989407743.5928
+# of floating point multipliers/ dividers 3,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
+# of floating point multipliers/ dividers 4,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
+# of floating point multipliers/ dividers 5,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
+# of floating point multipliers/ dividers 6,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
+# of floating point multipliers/ dividers 7,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
+# of floating point multipliers/ dividers 8,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
+# of floating point multipliers/ dividers 9# of floating point multipliers/ dividers 10
