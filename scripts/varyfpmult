@@ -3,7 +3,7 @@
 for ((x=$1; x <= $2 ; x += 1))
 do
   echo -n "# of floating point multipliers/ dividers" $x 
-  export SSFLAGS="-res: fpmult $x"
+  export SSFLAGS="-res:fpmult $x"
   ./run-wattch \
      2>&1 | ./tabulate
 done
