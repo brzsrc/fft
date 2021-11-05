@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for ((x=$1; x <= $2 ; x += 1))
+do
+  echo -n "# of floating point ALUs" $x 
+  export SSFLAGS="-res: fpalu $x"
+  ./run-wattch \
+     2>&1 | ./tabulate
+done
