@@ -1,0 +1,13 @@
+for fetch in 2 4 8 16
+do 
+  for decode in 2 4 8 16
+  do
+    for issue in 2 4 8 16
+    do
+      echo -n "fetch, $fetch , decode, $decode , issue, $issue "
+      export SSFLAGS="-decode:width $decode -fetch:ifqsize $fetch -issue:width $issue"
+        ./run-wattch \
+          2>&1 | ./tabulate
+    done
+  done
+done
