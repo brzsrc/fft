@@ -229,3 +229,22 @@ bpred, perfect ,ruu, 32 ,lsq, 32 ,D1_cache_size 64 ,sim_IPC, 1.6295 ,sim_exec_BW
 # of floating point multipliers/ dividers 7,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
 # of floating point multipliers/ dividers 8,sim_IPC, 1.1149 ,sim_exec_BW, 1.1542 ,ruu_full, 0.3931 ,lsq_full, 0.6396 ,avg_sim_slip, 20.2417 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  989540268.2010
 # of floating point multipliers/ dividers 9# of floating point multipliers/ dividers 10
+
+./scripts/varyissue 2 64
+the maximum issue width in a given cycle 2  ,sim_IPC, 1.0126 ,sim_exec_BW, 1.1157 ,ruu_full, 0.3537 ,lsq_full, 0.5956 ,avg_sim_slip, 21.5675 ,dl1.miss_rate, 0.0012 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  869035796.8371
+the maximum issue width in a given cycle 4  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988715429.2813
+the maximum issue width in a given cycle 8  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1520 ,ruu_full, 0.3908 ,lsq_full, 0.6213 ,avg_sim_slip, 20.2278 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1473320987.6287
+the maximum issue width in a given cycle 16  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1520 ,ruu_full, 0.3908 ,lsq_full, 0.6213 ,avg_sim_slip, 20.2278 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 2819885309.5026
+the maximum issue width in a given cycle 32  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1520 ,ruu_full, 0.3908 ,lsq_full, 0.6213 ,avg_sim_slip, 20.2278 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 6278252506.0135
+the maximum issue width in a given cycle 64  ,sim_IPC, 1.1128 ,sim_exec_BW, 1.1520 ,ruu_full, 0.3908 ,lsq_full, 0.6213 ,avg_sim_slip, 20.2278 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 16854430580.7146
+
+./scripts/varyfetch 2 256
+the fetch width 2  ,sim_IPC, 1.0888 ,sim_exec_BW, 1.1232 ,ruu_full, 0.1619 ,lsq_full, 0.4017 ,avg_sim_slip, 18.5256 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1084614220.0786
+the fetch width 4  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988715429.0739
+the fetch width 8  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3941 ,lsq_full, 0.6627 ,avg_sim_slip, 20.3046 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  965990110.3339
+the fetch width 16  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1526 ,ruu_full, 0.3941 ,lsq_full, 0.6627 ,avg_sim_slip, 20.3046 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  980836306.9493
+the fetch width 32  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1526 ,ruu_full, 0.3941 ,lsq_full, 0.6627 ,avg_sim_slip, 20.3046 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0417 ,total_power_cycle_cc1,  984304074.8313
+the fetch width 64  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1526 ,ruu_full, 0.3941 ,lsq_full, 0.6627 ,avg_sim_slip, 20.3046 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0417 ,total_power_cycle_cc1, 1001316054.9048
+the fetch width 128  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1526 ,ruu_full, 0.3941 ,lsq_full, 0.6627 ,avg_sim_slip, 20.3046 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0417 ,total_power_cycle_cc1, 1033545852.7309
+the fetch width 256  ,sim_IPC, 1.1133 ,sim_exec_BW, 1.1526 ,ruu_full, 0.3941 ,lsq_full, 0.6627 ,avg_sim_slip, 20.3046 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0417 ,total_power_cycle_cc1, 1053518436.0425
+

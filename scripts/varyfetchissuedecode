@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for ((x=$1; x <= $2 ; x *= 2))
+do
+  echo -n "the decode/fetch/issue width" $x " "
+  export SSFLAGS="-decode:width $x -fetch:ifqsize $x -issue:width $x"
+  ./run-wattch \
+      2>&1 | ./tabulate
+done
