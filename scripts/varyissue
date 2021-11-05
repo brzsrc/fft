@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for ((x=$1; x <= $2 ; x *= 2))
+do
+  echo -n "the maximum issue width in a given cycle" $x " "
+  export SSFLAGS="-issue:width $x"
+  ./run-wattch \
+      2>&1 | ./tabulate
+done

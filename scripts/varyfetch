@@ -1,0 +1,9 @@
+#!/bin/bash
+
+for ((x=$1; x <= $2 ; x *= 2))
+do
+  echo -n "the fetch width" $x " "
+  export SSFLAGS="-fetch:ifqsize $x"
+  ./run-wattch \
+      2>&1 | ./tabulate
+done

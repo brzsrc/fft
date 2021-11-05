@@ -8,6 +8,15 @@
 128  ,sim_IPC, 1.1128
 256  ,sim_IPC, 1.1128
 
+./scripts/varyarch-lsq
+2  sim_IPC  0.6577 # instructions per cycle
+4  sim_IPC  0.9515 # instructions per cycle
+8  sim_IPC  1.1133 # instructions per cycle
+16  sim_IPC  1.1261 # instructions per cycle
+32  sim_IPC  1.1261 # instructions per cycle
+64  sim_IPC  1.1261 # instructions per cycle
+128  sim_IPC  1.1261 # instructions per cycle
+256  sim_IPC  1.1261 # instructions per cycle
 
 
 ./scripts/varyarch-energy
@@ -82,6 +91,7 @@ bpred, 2lev ,ruu, 32 ,lsq, 32 ,sim_IPC, 1.5429 ,sim_exec_BW, 1.6291 ,ruu_full, 0
 bpred, perfect ,ruu, 16 ,lsq, 8 ,sim_IPC, 1.1209 ,sim_exec_BW, 1.1209 ,ruu_full, 0.3588 ,lsq_full, 0.6638 ,avg_sim_slip, 21.0103 ,dl1.miss_rate, 0.0012 ,ul2.miss_rate, 0.0415 ,total_power_cycle_cc1,  933704572.3328
 bpred, perfect ,ruu, 16 ,lsq, 16 ,sim_IPC, 1.1275 ,sim_exec_BW, 1.1275 ,ruu_full, 0.9139 ,lsq_full, 0.0000 ,avg_sim_slip, 22.6651 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0415 ,total_power_cycle_cc1,  927945526.0908
 bpred, perfect ,ruu, 16 ,lsq, 32 ,sim_IPC, 1.1275 ,sim_exec_BW, 1.1275 ,ruu_full, 0.9139 ,lsq_full, 0.0000 ,avg_sim_slip, 22.6651 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0415 ,total_power_cycle_cc1,  937037028.4952
+
 bpred, perfect ,ruu, 32 ,lsq, 8 ,sim_IPC, 1.1250 ,sim_exec_BW, 1.1250 ,ruu_full, 0.0001 ,lsq_full, 0.7998 ,avg_sim_slip, 21.6760 ,dl1.miss_rate, 0.0012 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1036193263.1811
 bpred, perfect ,ruu, 32 ,lsq, 16 ,sim_IPC, 1.6154 ,sim_exec_BW, 1.6154 ,ruu_full, 0.2832 ,lsq_full, 0.5571 ,avg_sim_slip, 28.5999 ,dl1.miss_rate, 0.0014 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  895177502.9623
 bpred, perfect ,ruu, 32 ,lsq, 32 ,sim_IPC, 1.6449 ,sim_exec_BW, 1.6449 ,ruu_full, 0.8180 ,lsq_full, 0.0000 ,avg_sim_slip, 30.3056 ,dl1.miss_rate, 0.0015 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  876793140.4957
@@ -186,3 +196,25 @@ bpred, perfect ,ruu, 32 ,lsq, 32 ,D1_cache_size 16 ,sim_IPC, 1.6036 ,sim_exec_BW
 bpred, perfect ,ruu, 32 ,lsq, 32 ,D1_cache_size 32 ,sim_IPC, 1.6220 ,sim_exec_BW, 1.6220 ,ruu_full, 0.8165 ,lsq_full, 0.0000 ,avg_sim_slip, 30.6918 ,dl1.miss_rate, 0.0255 ,ul2.miss_rate, 0.0027 ,total_power_cycle_cc1,  821513411.7136
 bpred, perfect ,ruu, 32 ,lsq, 32 ,D1_cache_size 64 ,sim_IPC, 1.6295 ,sim_exec_BW, 1.6295 ,ruu_full, 0.8163 ,lsq_full, 0.0000 ,avg_sim_slip, 30.5637 ,dl1.miss_rate, 0.0186 ,ul2.miss_rate, 0.0037 ,total_power_cycle_cc1,  824630483.7473
 
+----------------------------------------------------------------------------------------------------------------------------------------
+./scripts/varyialu 1 10
+# of integer ALUs. 1,sim_IPC, 0.9589 ,sim_exec_BW, 1.0303 ,ruu_full, 0.3996 ,lsq_full, 0.5727 ,avg_sim_slip, 22.9478 ,dl1.miss_rate, 0.0012 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  948764188.7902
+# of integer ALUs. 2,sim_IPC, 1.0835 ,sim_exec_BW, 1.1229 ,ruu_full, 0.3877 ,lsq_full, 0.6287 ,avg_sim_slip, 20.7082 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  881799441.7097
+# of integer ALUs. 3,sim_IPC, 1.1134 ,sim_exec_BW, 1.1527 ,ruu_full, 0.3934 ,lsq_full, 0.6399 ,avg_sim_slip, 20.2693 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  930549754.7899
+# of integer ALUs. 4,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988715429.1227
+# of integer ALUs. 5,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1046605913.2945
+# of integer ALUs. 6,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1104090223.1971
+# of integer ALUs. 7,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1161210954.4208
+# of integer ALUs. 8,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1218004948.0657
+# of integer ALUs. 9# of integer ALUs. 10⏎
+
+./scripts/varyfpalu 1 10
+# of floating point ALUs 1,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  851728194.1248
+# of floating point ALUs 2,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  897458605.2504
+# of floating point ALUs 3,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  943114697.2974
+# of floating point ALUs 4,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1,  988715429.1837
+# of floating point ALUs 5,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1034273844.6620
+# of floating point ALUs 6,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1079799188.1558
+# of floating point ALUs 7,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1125298194.0914
+# of floating point ALUs 8,sim_IPC, 1.1133 ,sim_exec_BW, 1.1525 ,ruu_full, 0.3927 ,lsq_full, 0.6400 ,avg_sim_slip, 20.2689 ,dl1.miss_rate, 0.0013 ,ul2.miss_rate, 0.0416 ,total_power_cycle_cc1, 1170775884.7225
+# of floating point ALUs 9# of floating point ALUs 10⏎
